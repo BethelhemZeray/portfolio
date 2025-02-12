@@ -1,13 +1,13 @@
-import RowExperience from "../components/RowExperiance";
+import SectionHeader from "../components/SectionHeader";
 import WorkExperience from "../components/WorkExperience";
 import { workExperiences } from "../constants/workExperiance";
 
 const ExperienceSection = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-center mb-8">Work Experience</h1>
+    <section id="work" className="container mx-auto px-4 py-8">
+      <SectionHeader/>
       <WorkExperience experiences={workExperiences} />
-    </div>
+    </section>
   );
 };
 

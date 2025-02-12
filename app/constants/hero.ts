@@ -1,6 +1,5 @@
 import { THero } from "./type";
 import profile from '../../public/images/banner.png';
-import Architecture from '../../public/images/architecture.jpg';
 import bg from '../../public/images/19389.jpg';
 
 

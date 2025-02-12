@@ -1,4 +1,3 @@
-import { roles } from "../constants/roles";
 import CounterCard from "./CounterCard";
 
 const counts = [
@@ -26,7 +25,8 @@ const counts = [
 
 const RoleSection = () => {
   return (
-    <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 rounded-lg lg:px-10 px-4">
+    <div className="w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 rounded-lg lg:px-10 px-4 py-2 pt-4">
+      <p className="text-primary text-lg">Role</p>
       {counts.map((count, index) => (
         <CounterCard key={index} count={count} />
       ))}

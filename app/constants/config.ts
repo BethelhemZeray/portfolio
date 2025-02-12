@@ -23,7 +23,7 @@ export const config: TConfig = {
   },
   sections: {
     about: {
-      p: "Introduction",
+      p: "About Me",
       h2: "Overview",
       content: `I'm a software developer skilled in TypeScript, JavaScript, Flutter, 
         React, Node.js, and more. I create scalable, user-friendly web and mobile apps, 

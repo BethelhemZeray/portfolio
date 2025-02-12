@@ -10,8 +10,8 @@ interface ProgressChartProps {
 
 const ProgressChart = ({ title, skills }: ProgressChartProps) => {
   return (
-    <div className="w-full grid grid-cols-1 gap-4 rounded-lg p-4">
-      <div className="w-full flex justify-between items-center py-4">
+    <div className="w-full grid grid-cols-1 gap-4 rounded-lg px-4 py-2">
+      <div className="w-full flex justify-between items-center">
         <h2 className="text-xl lg:text-2xl font-bold truncate">
           {title}
         </h2>

@@ -1,4 +1,3 @@
-import { Icon } from "next/dist/lib/metadata/types/metadata-types";
 import { StaticImageData } from "next/image";
 import { IconType } from "react-icons";
 
@@ -33,7 +32,7 @@ export type TGraduation = {
   name: string;
   dept: string;
   gpa: String;
-  resume:String;
+  resume: String;
 };
 
 export type TExperience = {
@@ -149,4 +148,10 @@ export type TConfig = {
     tech: Required<TSection>;
     footer: FooterSection;
   };
+};
+
+export type TSections = {
+  about: TSection;
+  skills: TSection;
+  projects: TSection;
 };

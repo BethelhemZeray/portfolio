@@ -1,5 +1,5 @@
 "use client";
-import { ComponentType, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { FaFileContract, FaBuilding, FaHome, FaCogs } from 'react-icons/fa';
 
 interface CountProps {

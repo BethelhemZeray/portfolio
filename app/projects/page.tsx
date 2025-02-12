@@ -1,5 +1,4 @@
 import ProjectCard from "../components/ProjectCard";
-import RoleSection from "../components/RoleSection";
 import { projects } from "../constants/project";
 
 export default function ProjectsSection() {

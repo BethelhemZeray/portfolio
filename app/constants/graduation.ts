@@ -1,4 +1,4 @@
-import { TGraduation, THero } from "./type";
+import { TGraduation } from "./type";
 import haramaya from '../../public/images/haramaya.png';
 
 

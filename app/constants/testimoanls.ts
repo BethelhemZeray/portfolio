@@ -1,6 +1,6 @@
 import { TTestimonial } from "./type";
 
-const testimonials: TTestimonial[] = [
+export const testimonials: TTestimonial[] = [
     {
       testimonial:
         'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
