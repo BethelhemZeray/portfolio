@@ -13,7 +13,7 @@ const TextLoop = ({ skills }: TextLoopProps) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % skills.length); // Loop through texts
-    }, 2000); // Change text every 2 seconds (adjust as needed)
+    }, 3000); // Change text every 2 seconds (adjust as needed)
 
     return () => clearInterval(interval); // Cleanup interval
   }, [skills.length]);

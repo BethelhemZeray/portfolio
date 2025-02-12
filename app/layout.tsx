@@ -12,9 +12,9 @@ export const metadata: Metadata = {
   title: "Eng. Lalisa",
   description: "Welcome to Eng Lelisa's portfolio",
   icons: {
-    icon: "favicon_io/favicon.ico", 
-    shortcut: "favicon_io/favicon-32x32.png", 
-    apple: "favicon_io/apple-touch-icon.png", 
+    icon: "favicon_io/favicon.ico",
+    shortcut: "favicon_io/favicon-32x32.png",
+    apple: "favicon_io/apple-touch-icon.png",
   },
   manifest: "favicon_io/site.webmanifest",
 };
@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head className="border-full border-white p-2">
+      <head>
         <link
           rel="icon"
           type="image/png"
@@ -42,9 +42,9 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} flex flex-col min-h-screen`}>
         <Navbar />
-        {children}
+        <main className="flex-1 pt-10">{children}</main>
         <Footer />
         <ReturnButton />
       </body>

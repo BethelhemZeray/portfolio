@@ -3,7 +3,7 @@ import { projects } from "../constants/project";
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="py-20 bg-gray-900">
+    <section id="projects" className="py-20 bg-background">
       <div className="w-full mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
 

@@ -2,7 +2,7 @@ import { FaPaperPlane } from "react-icons/fa";
 
 const ContactForm = () => {
   return (
-    <div className="bg-dark text-white px-4 py-8 md:p-12 lg:py-[60px] rounded-2xl shadow-lg">
+    <div className="bg-secondary text-white px-4 py-8 md:p-12 lg:py-[60px] rounded-2xl shadow-lg">
       {/* Grid Layout for GET IN TOUCH and Form Sections */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* GET IN TOUCH Section */}
@@ -29,7 +29,7 @@ const ContactForm = () => {
                   type="text"
                   id="name"
                   name="name"
-                  className="mt-1 block w-full px-5 py-4 bg-gray-800 border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="mt-1 block w-full px-5 py-4 bg-gray-900 border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                   placeholder="Enter your name"
                   required
                 />
@@ -41,7 +41,7 @@ const ContactForm = () => {
                   type="tel"
                   id="phone"
                   name="phone"
-                  className="mt-1 block w-full px-5 py-4 bg-gray-800 border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="mt-1 block w-full px-5 py-4 bg-gray-900 border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                   placeholder="Enter your phone number"
                   required
                 />
@@ -53,7 +53,7 @@ const ContactForm = () => {
                   type="email"
                   id="email"
                   name="email"
-                  className="mt-1 block w-full px-5 py-4 bg-gray-800 border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="mt-1 block w-full px-5 py-4 bg-gray-900 border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                   placeholder="Enter your email"
                   required
                 />
@@ -65,7 +65,7 @@ const ContactForm = () => {
                   type="text"
                   id="subject"
                   name="subject"
-                  className="mt-1 block w-full px-5 py-4 bg-gray-800 border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="mt-1 block w-full px-5 py-4 bg-gray-900 border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                   placeholder="Enter the subject"
                   required
                 />
@@ -78,7 +78,7 @@ const ContactForm = () => {
                 id="message"
                 name="message"
                 rows={4}
-                className="mt-1 block w-full px-5 py-4 bg-gray-800 border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="mt-1 block w-full px-5 py-4 bg-gray-900 border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Enter your message"
                 required
               />
@@ -88,7 +88,7 @@ const ContactForm = () => {
             <div className="lg:col-span-2">
               <button
                 type="submit"
-                className="w-full flex items-center justify-center px-4 py-4 bg-blue-600 text-white font-semibold rounded-[50px] hover:bg-blue-700 transition-colors duration-300"
+                className="w-full flex items-center justify-center px-4 py-4 bg-primary text-white font-semibold rounded-[50px] hover:bg-blue-400 transition-colors duration-300"
               >
                 Send Mail
                 <FaPaperPlane className="ml-2" />

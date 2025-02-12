@@ -44,7 +44,7 @@ const WrapCard = ({ children }: WrapCardProps) => {
   return (
     <div
       ref={cardRef}
-      className="text-center p-0.5 rounded-2xl shadow-lg hover-card bg-dark relative"
+      className="text-center p-0.5 rounded-2xl shadow-lg hover-card bg-background relative"
     >
       {child} 
     </div>

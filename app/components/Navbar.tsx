@@ -34,8 +34,8 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-gray-900 bg-opacity-90 backdrop-blur-md z-50">
-      <div className="w-full bg-gray-900 mx-auto px-4 py-4 flex justify-between items-center">
+    <nav className="fixed top-0 left-0 w-full bg-background bg-opacity-90 backdrop-blur-md z-50">
+      <div className="w-full bg-background mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo or Brand Name */}
         <Link href="/" className="text-2xl font-bold text-white">
           Eng. Lalisa
@@ -84,7 +84,7 @@ export default function Navbar() {
         onClick={toggleMenu} // Close menu when clicking outside
       >
         <div
-          className={`fixed top-0 left-0 h-screen w-3/4 max-w-sm bg-gray-900 bg-opacity-95 backdrop-blur-md transform transition-transform duration-700 ease-in-out px-3 ${
+          className={`fixed top-0 left-0 h-screen w-3/4 max-w-sm bg-background bg-opacity-95 backdrop-blur-md transform transition-transform duration-700 ease-in-out px-3 ${
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
           onClick={(e) => e.stopPropagation()} // Prevent clicks inside the sidebar from closing it

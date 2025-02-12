@@ -8,7 +8,7 @@ const data = graduation[0];
 
 const GraduationSection = () => {
   return (
-    <div className="grid grid-col-1 lg:grid-cols-2 gap-6 p-6 bg-white rounded-lg shadow-md"
+    <div className="grid grid-col-1 lg:grid-cols-2 gap-6 p-6 bg-primary2 rounded-lg shadow-md"
     >
       {/* Left Section: Graduation Hat, Scroll Icon, and Year */}
       <div

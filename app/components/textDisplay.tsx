@@ -19,7 +19,7 @@ const TextDisplay = ({ text }: TextDisplayProps) => {
       setTimeout(() => {
         setDisplayText(text); // Update the text
         setIsClosing(false); // Start opening the new text
-      }, 600); // Match the duration of the closing animation
+      }, 1000); // Match the duration of the closing animation
     }
   }, [text, displayText]);
 

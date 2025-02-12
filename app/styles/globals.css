@@ -61,7 +61,7 @@ html {
   overflow: hidden;
   white-space: nowrap;
   width: 0;
-  animation: typing 0.5s steps(40, end) forwards,
+  animation: typing 1s steps(40, end) forwards,
     blink-cursor 1s step-end infinite;
 }
 
@@ -70,7 +70,7 @@ html {
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
-  animation: close 0.5s steps(40, end) forwards;
+  animation: close 1s steps(40, end) forwards;
 }
 
 /* Glow Effect to Glow Card */

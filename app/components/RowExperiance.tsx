@@ -7,7 +7,7 @@ interface RowExperienceProps {
 
 const RowExperience = ({ work }: RowExperienceProps) => {
   return (
-    <div className="group relative text-white bg-gray-900 border-t-2 overflow-hidden border-white-500 hover:border-primary duration-600 mt-3">
+    <div className="group relative text-white bg-background border-t-2 overflow-hidden border-white-500 hover:border-primary duration-600 mt-3">
       {/* Hover Effect Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-600"></div>
 

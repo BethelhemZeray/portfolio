@@ -6,7 +6,7 @@ import RoleAndSkills from "./skills/page";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-900 text-white">
+    <main className="min-h-screen bg-background text-white">
       <HeroSection />
       <AboutSection />
       <RoleAndSkills/>

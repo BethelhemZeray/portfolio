@@ -6,7 +6,7 @@ import { skills } from "../constants/skills";
 
 const RoleAndSkills = () => {
   return (
-    <section id="skills" className="bg-gray-900 px-4">
+    <section id="skills" className="bg-background px-4">
       <SectionHeader sectionKey="skills"/>
       <SkillSection skills={skills}/>
       <RoleSection />

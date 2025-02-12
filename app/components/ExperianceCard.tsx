@@ -26,7 +26,7 @@ const ExperianceCard = () => {
     }, []);
 
   return (
-    <div className="h-full flex flex-col items-left justify-center p-8 space-y-2 lg:space-y-8 rounded-lg shadow-lg bg-gradient-to-b from-dark to-primary2">
+    <div className="h-full flex flex-col items-left justify-center p-8 space-y-2 lg:space-y-8 rounded-lg shadow-lg bg-gradient-to-b from-secondary to-primary">
       <h3 className="text-5xl lg:text-9xl font-bold text-white mb-2">{currentExperience}</h3>
       <p className="text-white text-2xl lg:text-5xl">{experience.title}</p>
       <p className="text-gray-300">{experience.description}</p>

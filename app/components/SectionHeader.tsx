@@ -5,12 +5,11 @@ interface SectionProps {
 }
 
 const SectionHeader = ({ sectionKey }: SectionProps) => {
-  const { h2, p, content } = section[sectionKey];
+  const { h2, content } = section[sectionKey];
 
   return (
     <div className="w-full py-4 mx-auto space-y-1 shadow-md">
       <h2 className="text-2xl lg:text-3xl text-center text-primary font-bold">{h2}</h2>
-      <p className="text-lg text-center lg:text-xl text-gray-200">{p}</p>
       <p className="text-base text-center lg:text-lg text-gray-400 whitespace-pre-line">
         {content}
       </p>

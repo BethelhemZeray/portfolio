@@ -17,7 +17,7 @@ const ProgressChart = ({ title, skills }: ProgressChartProps) => {
         </h2>
       </div>
       {skills.map((s, index) => (
-        <div key={index} className="bg-dark rounded-lg p-5 opacity-98">
+        <div key={index} className="bg-secondary rounded-lg p-5 opacity-98">
           <div className="flex justify-between items-center mb-2">
             <h3 className="text-1xl font-bold text-white">{s.skill}</h3>
             <span className="text-1xl text-white">{s.percentage}%</span>

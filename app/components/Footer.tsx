@@ -34,8 +34,8 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gray-900 text-white pt-10">
-      <div className="container bg-dark mx-auto py-6 px-4 lg:p-6">
+    <footer className="bg-background text-white pt-10">
+      <div className="container bg-secondary mx-auto py-6 px-4 lg:p-6">
         {/* Grid Layout for Quick Links, Contact Info, and Social Links */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Call-to-Action */}

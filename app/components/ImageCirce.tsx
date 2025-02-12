@@ -4,7 +4,7 @@ import lelisa from "../../public/images/lelisa.png";
 
 function ImageCircle() {
   return (
-    <div className="lg:w-1/2 w-full flex justify-center items-center sm:py-0 sm:px-4 lg:px-4 rder-1 lg:order-2">
+    <div className="lg:w-1/2 w-full flex justify-center items-center py-10 sm:px-4 lg:px-4 rder-1 lg:order-2">
       <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm rounded-full overflow-hidden shadow-xl border-2 border-white">
         <Image
           src={lelisa}
