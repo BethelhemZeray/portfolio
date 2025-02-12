@@ -30,7 +30,7 @@ export default function Footer() {
     location: FaMapMarkerAlt,
     phone: FaPhone,
     youtube:FaYoutube,
-    telegram:FaYoutube
+    telegram:FaTelegram
   };
 
   return (
