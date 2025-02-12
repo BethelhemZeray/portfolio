@@ -7,7 +7,7 @@ interface RowExperienceProps {
 
 const RowExperience = ({ work }: RowExperienceProps) => {
   return (
-    <div className="group relative text-white bg-gray-900 border-t-2 overflow-hidden border-white-500 hover:border-primary duration-600">
+    <div className="group relative text-white bg-gray-900 border-t-2 overflow-hidden border-white-500 hover:border-primary duration-600 mt-3">
       {/* Hover Effect Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-600"></div>
 
@@ -22,20 +22,20 @@ const RowExperience = ({ work }: RowExperienceProps) => {
 
           {/* Position and Project Cost */}
           <div className="text-center lg:text-left">
-            <p className="text-3xl">{work.position}</p>
+            <p className="text-2xl lg:text-3xl">{work.position}</p>
             <p className="text-white">{work.projectCost}</p>
           </div>
         </div>
 
         {/* Grid Item 2: Project and Client */}
         <div className="lg:col-span-1 space-y-4 flex flex-col items-center lg:items-start text-center lg:text-left">
-          <h3 className="text-xl font-semibold">{work.project}</h3>
+          <h3 className="lg:text-xl font-semibold">{work.project}</h3>
           <p className="text">{work.client}</p>
         </div>
 
         {/* Grid Item 3: Contractor and Consultant */}
         <div className="lg:col-span-1 space-y-4 flex flex-col items-center lg:items-start text-center lg:text-left">
-          <p className="text-xl">{work.contractor}</p>
+          <p className="lg:text-xl">{work.contractor}</p>
           <p className="text-white">{work.consultant}</p>
         </div>
       </div>

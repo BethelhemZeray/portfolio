@@ -1,6 +1,7 @@
 import { THero } from "./type";
 import profile from '../../public/images/banner.png';
 import Architecture from '../../public/images/architecture.jpg';
+import bg from '../../public/images/19389.jpg';
 
 
 export const hero: THero[] = [
@@ -20,7 +21,7 @@ export const hero: THero[] = [
       alt: "Lalisa Chali Wakweyya",
     },
     backgroundImage: {
-      src: Architecture,
+      src: bg,
       alt: "Architecture",
     },
   },

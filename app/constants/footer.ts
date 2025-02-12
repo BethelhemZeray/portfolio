@@ -1,6 +1,40 @@
 export const config = {
-    // Other config data...
     footer: {
+      quickLinks: [
+        {
+          name: "About Me",
+          id: "about",
+        },
+        {
+          name: "Services",
+          id: "services",
+        },
+        {
+          name: "Contact Me",
+          id: "contact",
+        },
+        {
+          name: "Blog Post",
+          id: "blog",
+        },
+      ],
+      contac: [
+        {
+          name: "email",
+          url: "example@gmail.com",
+          icon: "email", // You can use an icon library like FontAwesome or Heroicons
+        },
+        {
+          name: "location",
+          url: "3891 Ranchview Dr. Richardson",
+          icon: "location",
+        },
+        {
+          name: "phone",
+          url: "0919755719",
+          icon: "phone",
+        },
+      ],
       socialLinks: [
         {
           name: "GitHub",
@@ -17,8 +51,14 @@ export const config = {
           url: "https://twitter.com/yourusername",
           icon: "twitter",
         },
+        {
+          name: "Twitter",
+          url: "https://twitter.com/yourusername",
+          icon: "twitter",
+        },
       ],
-      copyright: "© 2023 Your Name. All rights reserved.",
+      copyright: "© 2025 AbeDevSaga. All rights reserved.",
       callToAction: "Let's Connect!",
+      headline: "Get Ready To Create Great",
     },
   };

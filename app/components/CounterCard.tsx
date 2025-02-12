@@ -51,10 +51,10 @@ const CounterCard = ({ count }: { count: CountProps }) => {
         ref={cardRef}
         className="text-center p-6 rounded-2xl shadow-lg hover-glow bg-dark"
       >
-        <div className="flex justify-center items-center w-full mb-4 p-4">
+        <div className="flex justify-center items-center w-full p-2 mb-2 lg:mb-4 lg:p-4">
           {Icon && <Icon className="text-4xl lg:text-5xl text-primary2" />}
         </div>
-        <h3 className="text-3xl font-bold text-white mb-2">{count.role}</h3>
+        <h3 className="text-xl lg:text-3xl font-bold text-white mb-2">{count.role}</h3>
         <p className="text-gray-300">{count.description}</p>
       </div>
     </div>
