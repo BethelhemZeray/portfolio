@@ -13,7 +13,7 @@ const Blog = () => {
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 2xl:grid-cols-4 mt-6">
           {blogs.map((blog, index) => (
-            <WrapCard><BlogCard key={index} blog={blog} /></WrapCard>
+            <WrapCard key={index}><BlogCard key={index} blog={blog} /></WrapCard>
           ))}
         </div>
       </div>
