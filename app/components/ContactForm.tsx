@@ -13,7 +13,7 @@ const ContactForm = () => {
           </p>
           <p className="w-full text-gray-400">
             A seasoned Civil Engineer with expertise in contract administration,
-            construction supervision, and quantity surveying. Let's collaborate
+            construction supervision, and quantity surveying. Let&apos;s collaborate
             to bring your vision to life.
           </p>
         </div>

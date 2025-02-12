@@ -8,13 +8,12 @@ interface CountProps {
   description: string;
 }
 
-const iconMapping: Record<string, React.ComponentType<any>> = {
+const iconMapping: Record<string, React.ElementType> = {
   FaFileContract: FaFileContract,
   FaBuilding: FaBuilding,
   FaHome: FaHome,
   FaCogs: FaCogs,
 };
-
 
 const CounterCard = ({ count }: { count: CountProps }) => {
   const cardRef = useRef<HTMLDivElement>(null);

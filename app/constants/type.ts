@@ -31,8 +31,8 @@ export type TGraduation = {
   year: string;
   name: string;
   dept: string;
-  gpa: String;
-  resume: String;
+  gpa: string;
+  resume: string;
 };
 
 export type TExperience = {

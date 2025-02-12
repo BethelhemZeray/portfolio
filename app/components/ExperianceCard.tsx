@@ -23,7 +23,7 @@ const ExperianceCard = () => {
       }, stepTime);
   
       return () => clearInterval(timer);
-    }, [experience.years]);
+    }, []);
 
   return (
     <div className="h-full flex flex-col items-left justify-center p-8 space-y-2 lg:space-y-8 rounded-lg shadow-lg bg-gradient-to-b from-dark to-primary2">

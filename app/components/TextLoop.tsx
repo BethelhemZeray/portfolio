@@ -16,7 +16,7 @@ const TextLoop = ({ skills }: TextLoopProps) => {
     }, 2000); // Change text every 2 seconds (adjust as needed)
 
     return () => clearInterval(interval); // Cleanup interval
-  }, []);
+  }, [skills.length]);
 
   return <TextDisplay text={skills[currentIndex]} />;
 };
