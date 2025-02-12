@@ -5,7 +5,7 @@ import haramaya from '../../public/images/haramaya.png';
 export const graduation: TGraduation[] = [
     {
         universityLogo: haramaya, 
-        year: "2023", 
+        year: "2016", 
         name: "Haramaya University", 
         dept: "Civil Engineering",
         gpa: "3.8", 

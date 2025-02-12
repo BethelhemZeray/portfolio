@@ -7,8 +7,8 @@ const ContactForm = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* GET IN TOUCH Section */}
         <div className="flex flex-col justify-center items-left h-full space-y-3 lg:px-5">
-          <h2 className="font-bold ">GET IN TOUCH</h2>
-          <p className="text-gray-400 font-bold text-xl lg:text-3xl">
+          <h2 className="font-bold text-primary">GET IN TOUCH</h2>
+          <p className="text-gray-300 font-bold text-xl lg:text-3xl">
             Elevate your construction projects with Lalisa Chali Wakweyya
           </p>
           <p className="w-full text-gray-400">

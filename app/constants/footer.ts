@@ -6,44 +6,44 @@ export const config = {
           id: "about",
         },
         {
-          name: "Services",
-          id: "services",
+          name: "Skills",
+          id: "skills",
+        },
+        {
+          name: "Projects",
+          id: "work",
         },
         {
           name: "Contact Me",
           id: "contact",
         },
-        {
-          name: "Blog Post",
-          id: "blog",
-        },
       ],
-      contac: [
+      contact: [
         {
           name: "email",
-          url: "example@gmail.com",
+          url: "lalisachali2013@gmail.com",
           icon: "email", // You can use an icon library like FontAwesome or Heroicons
         },
         {
           name: "location",
-          url: "3891 Ranchview Dr. Richardson",
+          url: "Lege Tafo,Addis-Ababa,Ethiopia",
           icon: "location",
         },
         {
           name: "phone",
-          url: "0919755719",
+          url: "+251917058066/+251911383975",
           icon: "phone",
         },
       ],
       socialLinks: [
         {
-          name: "GitHub",
+          name: "Telegram",
           url: "https://github.com/yourusername",
-          icon: "github", // You can use an icon library like FontAwesome or Heroicons
+          icon: "telegram", // You can use an icon library like FontAwesome or Heroicons
         },
         {
           name: "LinkedIn",
-          url: "https://linkedin.com/in/yourusername",
+          url: "https://www.linkedin.com/in/lalisa-chali-94816710b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
           icon: "linkedin",
         },
         {
@@ -52,9 +52,9 @@ export const config = {
           icon: "twitter",
         },
         {
-          name: "Twitter",
+          name: "Youtube",
           url: "https://twitter.com/yourusername",
-          icon: "twitter",
+          icon: "youtube",
         },
       ],
       copyright: "© 2025 AbeDevSaga. All rights reserved.",

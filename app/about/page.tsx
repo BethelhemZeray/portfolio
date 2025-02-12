@@ -7,7 +7,7 @@ import SectionHeader from "../components/SectionHeader";
 const AboutSection = () => {
   return (
     <section id="about" className="bg-gray-900 px-4">
-      <SectionHeader/>
+      <SectionHeader sectionKey="about"/>
       <GraduationSection/>
       <div className="flex flex-col lg:flex-row items-top justify-center lg:justify-between h-full space-y-10 lg:space-y-0 py-4">
         <div className="lg:w-1/2 text-left lg:p-6 mt-8 lg:mt-0 rounded-lg backdrop-blur-sm">

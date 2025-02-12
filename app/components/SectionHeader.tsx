@@ -1,16 +1,20 @@
-// interface SectionProps {
-//     section: string[];
-// }
-// const SectionHeader = ({ section }: SectionProps) => {
-const SectionHeader = () => {
+import { section } from "../constants/sections";
+
+interface SectionProps {
+  sectionKey: keyof typeof section;
+}
+
+const SectionHeader = ({ sectionKey }: SectionProps) => {
+  const { h2, p, content } = section[sectionKey];
+
   return (
-      <div className="w-full p-4 mx-auto space-y-4">
-        <h2 className="text-2xl text-primary font-bold text-center">About Me</h2>
-        <p className="text-lg lg:text-2xl text-center">
-          I am a passionate developer with expertise in Next.js and Tailwind
-          CSS.
-        </p>
-      </div>
+    <div className="w-full py-4 mx-auto space-y-1 shadow-md">
+      <h2 className="text-2xl lg:text-3xl text-center text-primary font-bold">{h2}</h2>
+      <p className="text-lg text-center lg:text-xl text-gray-200">{p}</p>
+      <p className="text-base text-center lg:text-lg text-gray-400 whitespace-pre-line">
+        {content}
+      </p>
+    </div>
   );
 };
 

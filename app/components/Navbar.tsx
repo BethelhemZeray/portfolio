@@ -10,6 +10,8 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
   FaPhone,
+  FaYoutube,
+  FaTelegram,
 } from "react-icons/fa";
 
 export default function Navbar() {
@@ -20,6 +22,8 @@ export default function Navbar() {
     email: FaEnvelope,
     location: FaMapMarkerAlt,
     phone: FaPhone,
+    youtube:FaYoutube,
+    telegram: FaTelegram,
   };
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -125,7 +129,7 @@ export default function Navbar() {
           </ul>
           {/* socila links */}
           <div className="mt-9 text-gray-300">
-            <p>FIND ME WITH</p>
+            <p className="text-primary">FIND ME WITH</p>
             <div className="flex mt-3 lg:mt-4 space-x-4">
               {socialLinks.map((link, index) => {
                 const Icon =

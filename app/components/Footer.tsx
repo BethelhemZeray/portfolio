@@ -7,11 +7,19 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
   FaPhone,
+  FaYoutube,
+  FaTelegram
 } from "react-icons/fa"; // Import icons from React Icons
 
 export default function Footer() {
-  const { quickLinks, contac, socialLinks, copyright, callToAction, headline } =
-    config.footer;
+  const {
+    quickLinks,
+    contact,
+    socialLinks,
+    copyright,
+    callToAction,
+    headline,
+  } = config.footer;
 
   // Map icon names to React Icons components
   const iconComponents = {
@@ -21,6 +29,8 @@ export default function Footer() {
     email: FaEnvelope,
     location: FaMapMarkerAlt,
     phone: FaPhone,
+    youtube:FaYoutube,
+    telegram:FaYoutube
   };
 
   return (
@@ -30,22 +40,22 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Call-to-Action */}
           <div className="space-y-3">
-            <h2 className="text-1xl md:text-2xl font-bold">
+            <h2 className="text-1xl md:text-2xl text-primary font-bold">
               {callToAction}
             </h2>
-            <p className="text-2xl md:text-4xl">
-              {headline}
-            </p>
+            <p className="text-2xl md:text-4xl">{headline}</p>
           </div>
           {/* Quick Links Section */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-xl text-gray-300 font-semibold mb-4">
+              Quick Links
+            </h3>
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <Link
                     href={`#${link.id}`}
-                    className="text-gray-300 hover:text-white transition-colors duration-300"
+                    className="text-gray-400 hover:text-white transition-colors duration-300"
                   >
                     {link.name}
                   </Link>
@@ -56,15 +66,17 @@ export default function Footer() {
 
           {/* Contact Information Section */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">Contact Me</h3>
+            <h3 className="text-xl text-gray-300 font-semibold mb-4">
+              Contact Me
+            </h3>
             <ul className="space-y-3">
-              {contac.map((contact, index) => {
+              {contact.map((contact, index) => {
                 const Icon =
                   iconComponents[contact.icon as keyof typeof iconComponents];
                 return (
                   <li key={index} className="flex items-center space-x-3">
-                    <Icon className="w-4 h-4 text-gray-300" />
-                    <span className="text-gray-300">{contact.url}</span>
+                    <Icon className="w-4 h-4 text-gray-400" />
+                    <span className="text-gray-400">{contact.url}</span>
                   </li>
                 );
               })}

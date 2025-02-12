@@ -1,4 +1,3 @@
-// root layout for the app
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./styles/globals.css";
@@ -10,8 +9,14 @@ import ReturnButton from "./components/ReturnButton";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "A personal portfolio built with Next.js and Tailwind CSS",
+  title: "Eng. Lalisa",
+  description: "Welcome to Eng Lelisa's portfolio",
+  icons: {
+    icon: "favicon_io/favicon.ico", 
+    shortcut: "favicon_io/favicon-32x32.png", 
+    apple: "favicon_io/apple-touch-icon.png", 
+  },
+  manifest: "favicon_io/site.webmanifest",
 };
 
 export default function RootLayout({
@@ -21,6 +26,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head className="border-full border-white p-2">
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+      </head>
       <body className={inter.className}>
         <Navbar />
         {children}

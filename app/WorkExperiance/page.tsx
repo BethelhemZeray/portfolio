@@ -5,7 +5,7 @@ import { workExperiences } from "../constants/workExperiance";
 const ExperienceSection = () => {
   return (
     <section id="work" className="container mx-auto px-4 py-8">
-      <SectionHeader/>
+      <SectionHeader sectionKey="projects"/>
       <WorkExperience experiences={workExperiences} />
     </section>
   );

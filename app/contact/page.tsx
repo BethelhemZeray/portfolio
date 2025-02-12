@@ -3,7 +3,7 @@ import WrapCard from "../components/WrapCard";
 
 const ContactSection = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div id="contact" className="container mx-auto px-4 py-8">
       <WrapCard>
         <ContactForm />
       </WrapCard>
