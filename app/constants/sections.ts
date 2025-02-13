@@ -4,7 +4,7 @@ export const section: TSections = {
   about: {
     p: "About Me",
     h2: "Background & Expertise",
-    content: "I am Lalisa Chali Wakweyya, a Civil Engineer with 7+ years of experience in construction supervision, contract administration, and quantity surveying across major projects in Ethiopia."
+    content: "I am Lalisa Chali Wakweyya, a Civil Engineer with 8+ years of experience in construction supervision, contract administration, and quantity surveying across major projects in Ethiopia."
    },
   skills: {
     p: "What I Bring to the Table",

@@ -15,7 +15,7 @@ export const hero: THero[] = [
       "Structural Engineering.",
       "Team Leadership.",
     ],
-    description: "I'm a seasoned Civil Engineer with over 7 years of experience in contract administration, construction supervision, and quantity surveying. I have successfully managed multi-million and billion-birr projects across infrastructure, education, healthcare, commercial, and hospitality sectors",
+    description: "I'm a seasoned Civil Engineer with over 8 years of experience in contract administration, construction supervision, and quantity surveying. I have successfully managed multi-million and billion-birr projects across infrastructure, education, healthcare, commercial, and hospitality sectors",
     profileImage: {
       src: profile,
       alt: "Lalisa Chali Wakweyya",
