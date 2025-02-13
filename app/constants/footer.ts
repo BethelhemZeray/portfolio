@@ -38,7 +38,7 @@ export const config = {
       socialLinks: [
         {
           name: "Telegram",
-          url: "https://github.com/yourusername",
+          url: "https://t.me/YegaarS",
           icon: "telegram", // You can use an icon library like FontAwesome or Heroicons
         },
         {

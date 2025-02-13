@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { config } from "../constants/footer";
+import { FaXTwitter } from "react-icons/fa6";
 import {
   FaGithub,
   FaLinkedin,
-  FaTwitter,
   FaEnvelope,
   FaMapMarkerAlt,
   FaPhone,
@@ -25,7 +25,7 @@ export default function Footer() {
   const iconComponents = {
     github: FaGithub,
     linkedin: FaLinkedin,
-    twitter: FaTwitter,
+    twitter: FaXTwitter,
     email: FaEnvelope,
     location: FaMapMarkerAlt,
     phone: FaPhone,

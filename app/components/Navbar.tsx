@@ -3,10 +3,10 @@ import Link from "next/link";
 import { useState } from "react";
 import { navLinks } from "../constants/navLinks";
 import { config } from "../constants/footer";
+import { FaXTwitter } from "react-icons/fa6";
 import {
   FaGithub,
   FaLinkedin,
-  FaTwitter,
   FaEnvelope,
   FaMapMarkerAlt,
   FaPhone,
@@ -18,7 +18,7 @@ export default function Navbar() {
   const iconComponents = {
     github: FaGithub,
     linkedin: FaLinkedin,
-    twitter: FaTwitter,
+    twitter: FaXTwitter,
     email: FaEnvelope,
     location: FaMapMarkerAlt,
     phone: FaPhone,
