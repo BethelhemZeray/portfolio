@@ -51,11 +51,6 @@ export const config = {
           url: "https://x.com/lalisachali2013?t=3MOcVdwNq9UObZvaBVK0QA&s=35",
           icon: "twitter",
         },
-        {
-          name: "Youtube",
-          url: "https://twitter.com/yourusername",
-          icon: "youtube",
-        },
       ],
       copyright: "© 2025 AbeDevSaga. All rights reserved.",
       callToAction: "Let's Connect!",

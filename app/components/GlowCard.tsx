@@ -57,7 +57,7 @@ const GlowCard = ({ count }: { count: CountProps }) => {
       ref={cardRef}
       className="text-center p-0.5 rounded-2xl shadow-lg hover-card bg-secondary relative"
     >
-      <div className="bg-secondary rounded-2xl p-10 opacity-98">
+      <div className="bg-secondary h-full rounded-2xl p-10 opacity-98">
         <h3 className="text-4xl font-bold text-white mb-4">{currentCount}+</h3>
         <p className="text-gray-300">{count.description}</p>
       </div>
