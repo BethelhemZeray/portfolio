@@ -26,7 +26,7 @@ const TextDisplay = ({ text }: TextDisplayProps) => {
   return (
     <div className="overflow-hidden inline-block max-w-full">
       <p
-        className={`text-lg md:text-xl border-r-2 border-r-black break-words whitespace-pre-wrap ${
+        className={`text-lg text-primary md:text-xl border-r-2 border-r-black break-words whitespace-pre-wrap ${
           isClosing ? "animate-close" : "animate-typing"
         }`}
       >
