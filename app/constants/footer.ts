@@ -48,7 +48,7 @@ export const config = {
         },
         {
           name: "Twitter",
-          url: "https://twitter.com/yourusername",
+          url: "https://x.com/lalisachali2013?t=3MOcVdwNq9UObZvaBVK0QA&s=35",
           icon: "twitter",
         },
         {
