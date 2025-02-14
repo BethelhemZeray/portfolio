@@ -1,7 +1,6 @@
 import BlogCard from "../components/BlogCard";
 import WrapCard from "../components/WrapCard";
 import { blogs } from "../constants/blog";
-import { main_projects } from "../constants/main_projects";
 
 const Blog = () => {
   return (

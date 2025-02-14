@@ -1,8 +1,5 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
-import { graduation } from "../constants/graduation";
-
-const data = graduation[0];
 
 interface GraduationData {
   universityLogo: StaticImageData;
