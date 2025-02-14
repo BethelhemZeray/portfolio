@@ -3,7 +3,7 @@ import WrapCard from "../components/WrapCard";
 import { blogs } from "../constants/blog";
 import { main_projects } from "../constants/main_projects";
 
-const Blog = () => {
+const MainProjects = () => {
   return (
     <section id="blog" className="py-12 px-4 bg-background">
       <div className="mx-auto flex flex-col items-center justify-center">
@@ -23,4 +23,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default MainProjects;

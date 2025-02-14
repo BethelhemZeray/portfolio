@@ -118,6 +118,17 @@ export type TBlog = {
   link: string;
 };
 
+export type TMainProjects = {
+  project: string;
+  consultant: string;
+  image: {
+    src: StaticImageData;
+    alt: string;
+  };
+  cost: string;
+  position: string;
+};
+
 export type TConfig = {
   html: {
     title: string;
