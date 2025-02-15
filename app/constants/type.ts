@@ -129,6 +129,11 @@ export type TMainProjects = {
   position: string;
 };
 
+export type TCertification = {
+  certificate: string;
+};
+
+
 export type TConfig = {
   html: {
     title: string;
@@ -165,4 +170,5 @@ export type TSections = {
   about: TSection;
   skills: TSection;
   projects: TSection;
+  certifications: TSection;
 };

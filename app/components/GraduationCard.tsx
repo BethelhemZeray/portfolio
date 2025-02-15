@@ -23,10 +23,10 @@ const GraduationCard = ({ data }: { data: GraduationData }) => {
         />
         {/* Name and Department */}
         <div className="text-center">
-          <h2 className="lg:text-5xl text-2xl font-bold text-gray-800">
+          <h2 className="lg:text-3xl text-2xl font-bold text-gray-800">
             {data.name}
           </h2>
-          <p className="lg:text-3xl text-1xl font-bold text-gray-600 mt-2">
+          <p className="lg:text-2xl text-1xl font-bold text-gray-600 mt-2">
             {data.dept}
           </p>
         </div>
@@ -40,7 +40,7 @@ const GraduationCard = ({ data }: { data: GraduationData }) => {
         <a
           href=""
           download={`${data.name}_Resume.pdf`}
-          className="px-6 py-3 bg-white text-primary rounded-lg text-lg font-semibold hover:bg-blue-50 transition-colors shadow-md"
+          className="px-4 py-3 bg-white text-primary rounded-lg text-lg font-semibold hover:bg-blue-50 transition-colors shadow-md"
         >
           Download Resume
         </a>

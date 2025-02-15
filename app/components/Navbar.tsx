@@ -84,7 +84,7 @@ export default function Navbar() {
         onClick={toggleMenu} // Close menu when clicking outside
       >
         <div
-          className={`fixed top-0 left-0 h-screen w-3/4 max-w-sm bg-background bg-opacity-95 backdrop-blur-md transform transition-transform duration-700 ease-in-out px-3 ${
+          className={`fixed top-0 left-0 h-screen w-3/4 max-w-sm bg-secondary bg-opacity-95 backdrop-blur-md transform transition-transform duration-700 ease-in-out px-3 ${
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
           onClick={(e) => e.stopPropagation()} // Prevent clicks inside the sidebar from closing it

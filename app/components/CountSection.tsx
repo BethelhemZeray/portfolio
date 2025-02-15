@@ -9,7 +9,7 @@ const counts = [
 
 const CountSection = () => {
   return (
-    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 rounded-lg lg:px-10">
+    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-8 rounded-lg lg:px-10">
       {counts.map((count) => (
         <GlowCard key={count.id} count={count} />
       ))}

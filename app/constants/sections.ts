@@ -16,4 +16,9 @@ export const section: TSections = {
     h2: "Notable Projects",
     content: "With extensive experience in the field, I have had the opportunity to contribute to several impactful projects. Here are a few notable highlights:",
   },
+  certifications: {
+    p: "Recognitions & Credentials",
+    h2: "Certifications & Training",
+    content: "I have acquired multiple certifications that validate my expertise and commitment to professional growth. Below are some of the key certifications I have earned:",
+  },
 };
