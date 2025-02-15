@@ -29,7 +29,7 @@ const ContactForm = () => {
                   type="text"
                   id="name"
                   name="name"
-                  className="mt-1 block w-full px-5 py-4 bg-gray-900 border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="mt-1 block w-full px-5 py-4 bg-color_gray border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                   placeholder="Enter your name"
                   required
                 />
@@ -41,7 +41,7 @@ const ContactForm = () => {
                   type="tel"
                   id="phone"
                   name="phone"
-                  className="mt-1 block w-full px-5 py-4 bg-gray-900 border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="mt-1 block w-full px-5 py-4 bg-color_gray border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                   placeholder="Enter your phone number"
                   required
                 />
@@ -53,7 +53,7 @@ const ContactForm = () => {
                   type="email"
                   id="email"
                   name="email"
-                  className="mt-1 block w-full px-5 py-4 bg-gray-900 border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="mt-1 block w-full px-5 py-4 bg-color_gray border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                   placeholder="Enter your email"
                   required
                 />
@@ -65,7 +65,7 @@ const ContactForm = () => {
                   type="text"
                   id="subject"
                   name="subject"
-                  className="mt-1 block w-full px-5 py-4 bg-gray-900 border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="mt-1 block w-full px-5 py-4 bg-color_gray border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                   placeholder="Enter the subject"
                   required
                 />
@@ -78,7 +78,7 @@ const ContactForm = () => {
                 id="message"
                 name="message"
                 rows={4}
-                className="mt-1 block w-full px-5 py-4 bg-gray-900 border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="mt-1 block w-full px-5 py-4 bg-color_gray border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Enter your message"
                 required
               />

@@ -15,6 +15,7 @@ export default {
         subtitle: "var(--color-subtitle)",
         primary: "var(--color-primary)",
         primary2: "var(--color-primary2)",
+        color_gray: "var(--color-gray)",
         darkBlue: "#111827",
         lightBlue: "#053c80",
         dark: "#162036",
