@@ -3,7 +3,7 @@ import { TMainProjects } from "../constants/type";
 
 const MainProjects = ({ project }: { project: TMainProjects }) => {
   return (
-    <div className="bg-gray-200 shadow-lg rounded-lg overflow-hidden">
+    <div className="bg-gray-300 shadow-lg rounded-lg overflow-hidden">
       <Image
         src={project.image.src}
         alt={project.image.alt}
