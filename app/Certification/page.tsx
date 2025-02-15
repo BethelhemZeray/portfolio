@@ -11,7 +11,7 @@ function CertificationSection() {
       <SectionHeader sectionKey="certifications"/>
       <div className="grid lg:grid-cols-2 gap-4 lg:gap-6">
         {certificates.map((certificate, index) => (
-          <WrapCard><CertificateList key={index} certificate={certificate.certificate} /></WrapCard>
+          <WrapCard key={index}><CertificateList key={index} certificate={certificate.certificate} /></WrapCard>
         ))}
       </div>
     </section>
