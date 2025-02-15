@@ -21,4 +21,9 @@ export const section: TSections = {
     h2: "Certifications & Training",
     content: "I have acquired multiple certifications that validate my expertise and commitment to professional growth. Below are some of the key certifications I have earned:",
   },
+  additional_works: {
+    p: "Additional Projects",
+    h2: "Additional Projects",
+    content: "Beyond these notable highlights, I have also worked on several other impactful projects, each contributing to my expertise and experience in the field."
+  }
 };

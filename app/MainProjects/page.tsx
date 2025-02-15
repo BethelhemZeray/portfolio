@@ -1,25 +1,21 @@
-import BlogCard from "../components/BlogCard";
+import MainProjects from "../components/MainProjects";
+import SectionHeader from "../components/SectionHeader";
 import WrapCard from "../components/WrapCard";
-import { blogs } from "../constants/blog";
+import { main_projects } from "../constants/main_projects";
 
-const MainProjects = () => {
+const MainProjectsSection = () => {
   return (
-    <section id="blog" className="py-12 px-4 bg-background">
-      <div className="mx-auto flex flex-col items-center justify-center">
-        <h2 className="text-3xl font-bold text-gray-900 text-center">Blog</h2>
-        <p className="text-gray-600 text-center mt-2">
-          Read my latest thoughts and tutorials.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-          {blogs.map((blog, index) => (
-            <WrapCard key={index}>
-              <BlogCard blog={blog} />
-            </WrapCard>
-          ))}
-        </div>
+    <section id="work" className="py-12 px-4 bg-background">
+      <SectionHeader sectionKey="projects" />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+        {main_projects.map((projects, index) => (
+          <WrapCard key={index}>
+            <MainProjects project={projects} />
+          </WrapCard>
+        ))}
       </div>
     </section>
   );
 };
 
-export default MainProjects;
+export default MainProjectsSection;

@@ -171,4 +171,5 @@ export type TSections = {
   skills: TSection;
   projects: TSection;
   certifications: TSection;
+  additional_works: TSection;
 };

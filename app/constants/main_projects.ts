@@ -5,14 +5,14 @@ import Ifa_Boru from '../../public/images/ifa-boru-school.jpg';
 
 export const main_projects: TMainProjects[] = [
   {
-    project: "G+6 Wallaga University Referral Hospital Staff Residence Project",
-    consultant: "Ethiopian Design and Supervision Works",
+    project: "3B+G+15 Mixed Use Office - Siinqee Bank Project (Ongoing)",
+    consultant: "Engineering Corporation of Oromia",
     image: {
         src: G6,
-        alt: "Wallaga University Referral Hospital",
+        alt: "Siinqee Bank",
     },
-    cost: "92,875,411.7 Million",
-    position: "Site Engineer",
+    cost: "1,788,532,422.07 Billion",
+    position: "Assistant Resident Engineer",
   },
   {
     project: "Renovation and Construction of Langano Resort Project",

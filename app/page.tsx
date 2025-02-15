@@ -4,6 +4,7 @@ import ExperienceSection from "./WorkExperiance/page";
 import ContactSection from "./contact/page";
 import RoleAndSkills from "./skills/page";
 import CertificationSection from "./Certification/page";
+import MainProjects from "./MainProjects/page";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutSection />
       <CertificationSection/>
       <RoleAndSkills/>
+      <MainProjects/>
       <ExperienceSection/>
       <ContactSection/>
     </main>

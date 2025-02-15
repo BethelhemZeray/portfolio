@@ -4,8 +4,8 @@ import { workExperiences } from "../constants/workExperiance";
 
 const ExperienceSection = () => {
   return (
-    <section id="work" className="container mx-auto px-4 py-8">
-      <SectionHeader sectionKey="projects"/>
+    <section className="container mx-auto px-4 py-8">
+      <SectionHeader sectionKey="additional_works"/>
       <WorkExperience experiences={workExperiences} />
     </section>
   );
