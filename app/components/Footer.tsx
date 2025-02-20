@@ -8,7 +8,7 @@ import {
   FaMapMarkerAlt,
   FaPhone,
   FaYoutube,
-  FaTelegram
+  FaTelegram,
 } from "react-icons/fa"; // Import icons from React Icons
 
 export default function Footer() {
@@ -29,8 +29,8 @@ export default function Footer() {
     email: FaEnvelope,
     location: FaMapMarkerAlt,
     phone: FaPhone,
-    youtube:FaYoutube,
-    telegram:FaTelegram
+    youtube: FaYoutube,
+    telegram: FaTelegram,
   };
 
   return (
@@ -73,10 +73,26 @@ export default function Footer() {
               {contact.map((contact, index) => {
                 const Icon =
                   iconComponents[contact.icon as keyof typeof iconComponents];
+                // Determine the correct link type
+                let link;
+                if (contact.name === "email") {
+                  link = `mailto:${contact.url}`;
+                } else if (contact.name === "phone") {
+                  link = `tel:${contact.url}`;
+                } else {
+                  link = contact.url;
+                }
                 return (
                   <li key={index} className="flex items-center space-x-3">
                     <Icon className="w-4 h-4 text-gray-400" />
-                    <span className="text-gray-400">{contact.url}</span>
+                    <a
+                      href={link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-gray-200 transition-colors"
+                    >
+                      {contact.value}
+                    </a>
                   </li>
                 );
               })}

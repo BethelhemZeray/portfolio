@@ -1,6 +1,62 @@
+'use client';
+import { useState } from "react";
 import { FaPaperPlane } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
+  const emailjsConfig = {
+    serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+    templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+    userId: process.env.NEXT_PUBLIC_EMAILJS_USER_ID!, // Add the public key here
+  };
+
+  const [form, setForm] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  })
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!, // Your EmailJS template ID
+        {
+          from_name: form.name,
+          from_email: form.email,
+          to_name: "Lalisa Chali Wakweyya",
+          to_email: "lalisachali2013@gmail.com", // The recipient email
+          phone: form.phone,
+          message: form.message,
+        },
+        emailjsConfig.userId
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you for reaching out. Your message has been sent!");
+          setForm({ name: "", phone: "", email: "", message: "" });
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+          alert("Oops! Something went wrong, please try again.");
+        }
+      );
+  };
+
   return (
     <div className="bg-secondary text-white px-4 py-8 md:p-12 lg:py-[60px] rounded-2xl shadow-lg">
       {/* Grid Layout for GET IN TOUCH and Form Sections */}
@@ -13,14 +69,14 @@ const ContactForm = () => {
           </p>
           <p className="w-full text-gray-400">
             A seasoned Civil Engineer with expertise in contract administration,
-            construction supervision, and quantity surveying. Let&apos;s collaborate
+            construction supervision, and quantity surveyor. Let&apos;s collaborate
             to bring your vision to life.
           </p>
         </div>
 
         {/* Form Section */}
         <div>
-          <form className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6">
             {/* Grid Layout for Form Fields */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Name */}
@@ -31,6 +87,8 @@ const ContactForm = () => {
                   name="name"
                   className="mt-1 block w-full px-5 py-4 bg-color_gray border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                   placeholder="Enter your name"
+                  value={form.name}
+                  onChange={handleChange}
                   required
                 />
               </div>
@@ -43,6 +101,8 @@ const ContactForm = () => {
                   name="phone"
                   className="mt-1 block w-full px-5 py-4 bg-color_gray border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                   placeholder="Enter your phone number"
+                  value={form.phone}
+                  onChange={handleChange}
                   required
                 />
               </div>
@@ -55,18 +115,8 @@ const ContactForm = () => {
                   name="email"
                   className="mt-1 block w-full px-5 py-4 bg-color_gray border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                   placeholder="Enter your email"
-                  required
-                />
-              </div>
-
-              {/* Subject */}
-              <div>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  className="mt-1 block w-full px-5 py-4 bg-color_gray border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="Enter the subject"
+                  value={form.email}
+                  onChange={handleChange}
                   required
                 />
               </div>
@@ -80,6 +130,8 @@ const ContactForm = () => {
                 rows={4}
                 className="mt-1 block w-full px-5 py-4 bg-color_gray border border-gray-700 rounded-2xl text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Enter your message"
+                value={form.message}
+                onChange={handleChange}
                 required
               />
             </div>
@@ -90,7 +142,7 @@ const ContactForm = () => {
                 type="submit"
                 className="w-full flex items-center justify-center px-4 py-4 bg-primary text-white font-semibold rounded-[50px] hover:bg-blue-400 transition-colors duration-300"
               >
-                Send Mail
+                {loading ? "Sending..." : "Send Mail"}
                 <FaPaperPlane className="ml-2" />
               </button>
             </div>

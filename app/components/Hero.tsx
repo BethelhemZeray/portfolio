@@ -39,19 +39,6 @@ export default function Hero({ hero }: HeroProps) {
           </p>
         </div>
         <ImageCircle />
-
-        {/* <div className="lg:w-1/2 w-full flex justify-center items-center sm:px-4 lg:px-4 rder-1 lg:order-2">
-          <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm rounded-xl overflow-hidden shadow-xl border-2 border-white">
-            <Image
-              src={hero.profileImage.src}
-              alt={hero.profileImage.alt}
-              width={500} // Decreased width
-              height={0} // Keeps aspect ratio
-              className="w-full h-auto object-cover rounded-xl"
-              priority
-            />
-          </div>
-        </div> */}
       </div>
     </section>
   );

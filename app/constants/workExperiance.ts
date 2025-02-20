@@ -22,25 +22,4 @@ export const workExperiences: TWorkExperience[] = [
       }
     ]
   },
-  {
-    title: "Engineering Corporation of Oromia",
-    works: [
-      {
-        project: "Lega Tafo Gewasa Ifa Boru Secondary School",
-        projectCost: "34,672,433.6 Million",
-        client: "Oromia Education Bureau",
-        contractor: "Wubcon Construction Plc",
-        consultant: "Engineering Corporation of Oromia",
-        position: "Resident Engineer"
-      },
-      {
-        project: "Shashemene Meja Demma Ifa Boru Secondary School",
-        projectCost: "37,543,677.77 Million",
-        client: "Oromia Education Bureau",
-        contractor: "Wegen Construction Plc",
-        consultant: "Engineering Corporation of Oromia",
-        position: "Resident Engineer"
-      },
-    ]
-  }
 ];

@@ -6,7 +6,7 @@ export const skills: TSkills[] = [
     skills: [
       { skill: "Contract Management", percentage: 95 },
       { skill: "Construction Supervision", percentage: 90 },
-      { skill: "Quantity Surveying", percentage: 85 },
+      { skill: "Quantity Surveyor", percentage: 85 },
       { skill: "Cost Estimation", percentage: 80 },
       { skill: "Project Planning & Scheduling", percentage: 85 },
       { skill: "Structural & Civil Engineering Designs", percentage: 75 },

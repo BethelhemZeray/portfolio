@@ -22,17 +22,20 @@ export const config = {
         {
           name: "email",
           url: "lalisachali2013@gmail.com",
-          icon: "email", // You can use an icon library like FontAwesome or Heroicons
+          icon: "email",
+          value: "lalisachali2013@gmail.com",
         },
         {
           name: "location",
-          url: "Lege Tafo,Addis-Ababa,Ethiopia",
+          url: "https://maps.google.com/?q=6.857587,37.764607",
           icon: "location",
+          value: "Ethiopia, Addis Ababa",
         },
         {
           name: "phone",
           url: "+251917058066/+251911383975",
           icon: "phone",
+          value: "+251917058066/+251911383975",
         },
       ],
       socialLinks: [
