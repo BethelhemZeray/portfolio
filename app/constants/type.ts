@@ -1,5 +1,4 @@
 import { StaticImageData } from "next/image";
-import { IconType } from "react-icons";
 
 type TSection = {
   p: string;
