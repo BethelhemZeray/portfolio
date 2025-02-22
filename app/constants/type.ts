@@ -103,7 +103,7 @@ export type TWorkExperience = {
 export type TRoles = {
   role: string;
   description: string;
-  icon: IconType;
+  icon: string;
 };
 
 export type TBlog = {
