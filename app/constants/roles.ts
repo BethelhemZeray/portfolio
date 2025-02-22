@@ -8,11 +8,6 @@ export const roles: TRoles[] = [
     icon: FaCogs,
   },
   {
-    role: "Senior Quantity Surveyor for Wenchi Resort Construction Project.",
-    description: "Responsible for cost estimation, financial management, and procurement during the construction of Wenchi Resort.",
-    icon: FaHome, 
-  },
-  {
     role: "Contract Engineer for hospital projects in Oromia.",
     description: "Manage contracts and ensure compliance for hospital construction projects within Oromia.",
     icon: FaBuilding, 
