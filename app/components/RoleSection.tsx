@@ -1,6 +1,5 @@
 import { roles } from "../constants/roles";
 import CounterCard from "./CounterCard";
-
 const RoleSection = () => {
   return (
     <div className="w-full px-4 lg:px-10 pt-4">

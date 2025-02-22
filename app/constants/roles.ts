@@ -2,23 +2,27 @@ import { TRoles } from "./type";
 
 export const roles: TRoles[] = [
   {
-    role: "Contract Administration & Construction Supervision across multiple projects.",
-    description: "Oversee and ensure proper management of contracts and supervise multiple construction projects for quality and compliance.",
+    role: "Construction Supervision",
+    description:
+      "Contract Administration & Construction Supervision across multiple projects.",
     icon: "FaCogs",
   },
   {
-    role: "Senior Quantity Surveyor for Wenchi Resort Construction Project.",
-    description: "Responsible for cost estimation, financial management, and procurement during the construction of Wenchi Resort.",
+    role: "Senior Quantity Surveyor",
+    description:
+      "Senior Quantity Surveyor for Wenchi Resort Construction Project.",
     icon: "FaHome", 
   },
   {
-    role: "Contract Engineer for hospital projects in Oromia.",
-    description: "Manage contracts and ensure compliance for hospital construction projects within Oromia.",
-    icon: "FaBuilding", 
+    role: "Contract Engineer",
+    description:
+      "Contract Engineer for hospital construction projects in Oromia.",
+    icon: "FaBuilding",
   },
   {
-    role: "Contract Engineer for Oromia Land Authority project termination cases.",
-    description: "Responsible for overseeing the contract termination process and ensuring legal and contractual obligations are met.",
+    role: "Contract Engineer",
+    description:
+      "Contract Engineer for Oromia Land Authority project termination cases.",
     icon: "FaFileContract", 
-  }
+  },
 ];
