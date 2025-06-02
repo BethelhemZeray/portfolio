@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { THero } from "../constants/type";
 import TextLoop from "./TextLoop";
-import ImageCard from "./ImageCard";
+// import ImageCard from "./ImageCard";
 import ImageCircle from "./ImageCirce";
 
 type HeroProps = {

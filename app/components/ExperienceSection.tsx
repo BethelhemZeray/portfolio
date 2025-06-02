@@ -1,7 +1,5 @@
 // components/ExperienceSection.tsx
 "use client";
-
-import { motion } from "framer-motion";
 import { TRealWorldExperience } from "../constants/type";
 import RealWorldExperienceCard from "./RealWorldExp";
 
