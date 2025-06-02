@@ -10,6 +10,7 @@ import {
   FaYoutube,
   FaTelegram,
 } from "react-icons/fa"; // Import icons from React Icons
+import { FaSquareUpwork } from "react-icons/fa6";
 
 export default function Footer() {
   const {
@@ -31,6 +32,7 @@ export default function Footer() {
     phone: FaPhone,
     youtube: FaYoutube,
     telegram: FaTelegram,
+    upwork: FaSquareUpwork,
   };
 
   return (

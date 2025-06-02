@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { THero } from "../constants/type";
 import TextLoop from "./TextLoop";
+import ImageCard from "./ImageCard";
 import ImageCircle from "./ImageCirce";
 
 type HeroProps = {
@@ -38,6 +39,7 @@ export default function Hero({ hero }: HeroProps) {
             {hero.description}
           </p>
         </div>
+        {/* <ImageCard /> */}
         <ImageCircle />
       </div>
     </section>

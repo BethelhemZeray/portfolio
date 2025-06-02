@@ -4,6 +4,7 @@ import { useState } from "react";
 import { navLinks } from "../constants/navLinks";
 import { config } from "../constants/footer";
 import { FaXTwitter } from "react-icons/fa6";
+import { FaSquareUpwork } from "react-icons/fa6";
 import {
   FaGithub,
   FaLinkedin,
@@ -22,8 +23,9 @@ export default function Navbar() {
     email: FaEnvelope,
     location: FaMapMarkerAlt,
     phone: FaPhone,
-    youtube:FaYoutube,
+    youtube: FaYoutube,
     telegram: FaTelegram,
+    upwork: FaSquareUpwork,
   };
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,7 +40,7 @@ export default function Navbar() {
       <div className="w-full bg-background mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo or Brand Name */}
         <Link href="/" className="text-2xl font-bold text-white">
-          Eng. Lalisa
+          Amanuels Portfolio
         </Link>
 
         {/* Hamburger Menu (Mobile) */}
@@ -90,7 +92,7 @@ export default function Navbar() {
           onClick={(e) => e.stopPropagation()} // Prevent clicks inside the sidebar from closing it
         >
           <div className="absolute top-4 left text-gray-300 text-xl focus:outline-none">
-            Eng. Lalisa
+            Amanuels Portfolio
           </div>
           {/* Close Button */}
           <button

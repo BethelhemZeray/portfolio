@@ -1,9 +1,9 @@
 "use client";
 import { useEffect, useRef } from "react";
-import { FaFileContract, FaBuilding, FaHome, FaCogs } from 'react-icons/fa';
+import { FaFileContract, FaServer, FaLaptopCode, FaCode,  FaBuilding, FaHome, FaCogs } from "react-icons/fa";
 
 interface CountProps {
-  role: string,
+  role: string;
   icon: string;
   description: string;
 }
@@ -13,6 +13,9 @@ const iconMapping: Record<string, React.ElementType> = {
   FaBuilding: FaBuilding,
   FaHome: FaHome,
   FaCogs: FaCogs,
+  FaServer: FaServer,
+  FaLaptopCode: FaLaptopCode,
+  FaCode: FaCode,
 };
 
 const CounterCard = ({ count }: { count: CountProps }) => {
@@ -42,7 +45,7 @@ const CounterCard = ({ count }: { count: CountProps }) => {
     };
   }, []);
 
-  const Icon = iconMapping[count.icon]; 
+  const Icon = iconMapping[count.icon];
 
   return (
     <div className="">
@@ -53,7 +56,9 @@ const CounterCard = ({ count }: { count: CountProps }) => {
         <div className="flex justify-center items-center w-full p-2 mb-2 lg:mb-4 lg:p-4">
           {Icon && <Icon className="text-4xl lg:text-5xl text-primary" />}
         </div>
-        <h3 className="text-xl lg:text-3xl font-bold text-white mb-2">{count.role}</h3>
+        <h3 className="text-xl lg:text-3xl font-bold text-white mb-2">
+          {count.role}
+        </h3>
         <p className="text-gray-300">{count.description}</p>
       </div>
     </div>

@@ -2,8 +2,8 @@ import { TConfig } from "./type";
 
 export const config: TConfig = {
   html: {
-    title: "Lalisa Chali Wakweyya— 3D Portfolio",
-    fullName: "Lalisa Chali Wakweyya Merdasa",
+    title: "Amanuel Daniel Wakweyya— 3D Portfolio",
+    fullName: "Amanuel Daniel Wakweyya Merdasa",
     email: "2000amandanm@gmail.com",
   },
   contact: {

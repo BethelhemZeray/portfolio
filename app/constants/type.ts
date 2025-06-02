@@ -34,6 +34,13 @@ export type TGraduation = {
   resume: string;
 };
 
+export type TRealWorldExperience = {
+  role: string;
+  company: string;
+  location?: string;
+  type: string;
+  responsibilities: string[];
+};
 export type TExperience = {
   companyName: string;
   iconBg: string;
@@ -118,20 +125,23 @@ export type TBlog = {
 };
 
 export type TMainProjects = {
-  project: string;
-  consultant: string;
+  name: string;
+  description: string;
+  tags: {
+    name: string;
+    color: string;
+  }[];
   image: {
     src: StaticImageData;
     alt: string;
   };
-  cost: string;
-  position: string;
+  github_repo?: string;
+  remote_url?: string;
 };
 
 export type TCertification = {
   certificate: string;
 };
-
 
 export type TConfig = {
   html: {
@@ -168,6 +178,7 @@ export type TConfig = {
 export type TSections = {
   about: TSection;
   skills: TSection;
+  experience: TSection;
   projects: TSection;
   certifications: TSection;
   additional_works: TSection;

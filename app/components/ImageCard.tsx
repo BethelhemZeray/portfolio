@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import lelisa from "../../public/images/lalisaprofile.png";
+import lelisa from "../../public/images/profile.jpg";
 
 function ImageCard() {
   return (
@@ -8,7 +8,7 @@ function ImageCard() {
       <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-sm rounded-xl overflow-hidden shadow-xl border-2 border-white">
         <Image
           src={lelisa}
-          alt="Lalisa Chali Profile"
+          alt="Amanuel Daniel Profile"
           width={600} 
           height={600} 
           className="w-full object-cover"

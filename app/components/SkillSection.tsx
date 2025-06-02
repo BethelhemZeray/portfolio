@@ -8,18 +8,21 @@ type SkillSectionProps = {
 
 function SkillSection({ skills }: SkillSectionProps) {
   return (
-    <>
-      <p className="text-primary text-lg px-4 lg:px-14">Skill</p>
-      <div className="flex flex-col md:p-10 lg:flex-row items-start justify-center lg:justify-between lg:py-4 lg:gap-14 gap-4 md:gap-8">
+    <div className="px-4 lg:px-14">
+      <p className="text-primary text-lg mb-4">Skills</p>
+      <div className="flex flex-wrap gap-4 md:gap-8">
         {skills.map((skill, index) => (
-          <ProgressChart
+          <div
             key={index}
-            title={skill.title}
-            skills={skill.skills}
-          />
+            className={`w-full ${
+              skills.length > 1 ? "md:w-[calc(50%-16px)]" : "md:w-full"
+            } ${skills.length > 2 ? "lg:w-[calc(33.333%-22px)]" : "lg:w-full"}`}
+          >
+            <ProgressChart title={skill.title} skills={skill.skills} />
+          </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 

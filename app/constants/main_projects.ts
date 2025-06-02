@@ -1,59 +1,160 @@
 import { TMainProjects } from "./type";
-import Langano from '../../public/images/lngano.jpg';
-import G6 from '../../public/images/g6.jpg';
-import Ifa_Boru from '../../public/images/ifa-boru-school.jpg';
-import Shashamane from '../../public/images/shashamane.jpg';
-import Gewasa from '../../public/images/gewasa.jpg';
+import rbacImage from "../../public/projects/rbac.png";
+import projectManagementImage from "../../public/projects/pm.png";
+import collabCodingImage from "../../public/projects/c-c.png";
+import alumniImage from "../../public/projects/waa.png";
+import harariMassMediaImage from "../../public/projects/mm.png";
+import hintaAiImage from "../../public/projects/hinta2.png";
+import portfolioImage from "../../public/projects/clinet-port.png";
+import feedbackSystemImage from "../../public/projects/mint.png";
+import ecommercePlatformImage from "../../public/projects/ecomerce.png";
 
-export const main_projects: TMainProjects[] = [
+export const mainProjects: TMainProjects[] = [
   {
-    project: "3B+G+15 Mixed Use Office - Siinqee Bank Project (Ongoing)",
-    consultant: "Engineering Corporation of Oromia",
+    name: "RBAC Dashboard Template",
+    description:
+      "A scalable Role-Based Access Control dashboard built with Next.js, Redux, and Tailwind CSS, supporting multi-language and responsive design.",
+    tags: [
+      { name: "Next.js", color: "blue" },
+      { name: "Redux", color: "purple" },
+      { name: "Tailwind CSS", color: "teal" },
+      { name: "Role-Based Access Control", color: "green" },
+    ],
     image: {
-        src: G6,
-        alt: "Siinqee Bank",
+      src: rbacImage,
+      alt: "RBAC Dashboard Screenshot",
     },
-    cost: "1,696,424,322.62 Billion",
-    position: "Assistant Resident Engineer",
+    github_repo: "https://github.com/AbeDevSaga/rbac-dashboard",
+    remote_url: "https://next-rbac-dashboard.vercel.app/",
   },
   {
-    project: "Renovation and Construction of Langano Resort Project",
-    consultant: "Engineering Corporation of Oromia",
+    name: "Project Management System",
+    description:
+      "Comprehensive project management tool with task tracking, milestones, real-time chat, and Gantt chart integration, built with Next.js and Express.js.",
+    tags: [
+      { name: "Next.js", color: "blue" },
+      { name: "Express.js", color: "gray" },
+      { name: "Socket.io", color: "orange" },
+      { name: "MongoDB", color: "green" },
+    ],
     image: {
-        src: Langano,
-        alt: "Langano Resort",
+      src: projectManagementImage,
+      alt: "Project Management System Screenshot",
     },
-    cost: "677,544,333.12 Million",
-    position: "Resident Engineer",
+    github_repo: "https://github.com/AbeDevSaga/project-management",
   },
   {
-    project: "Lega Tafo Eka Dalle Ifa Boru Secondary School",
-    consultant: "Oromia Engineering Corporation",
+    name: "Collaborative Coding Platform",
+    description:
+      "Microservices-based platform enabling real-time code collaboration with video calls, multi-user editing, and project management features.",
+    tags: [
+      { name: "Next.js", color: "blue" },
+      { name: "Node.js", color: "green" },
+      { name: "Socket.io", color: "orange" },
+      { name: "Docker", color: "gray" },
+    ],
     image: {
-        src: Ifa_Boru,
-        alt: "Ifa Boru Secondary School",
+      src: collabCodingImage,
+      alt: "Collaborative Coding Platform Screenshot",
     },
-    cost: "34,404,005.75 Million",
-    position: "Resident Engineer",
+    github_repo: "https://github.com/AbeDevSaga/codecollab-web-editor",
+    remote_url: "https://landing-page-weld-two-68.vercel.app/",
   },
   {
-    project: "Lega Tafo Gewasa Ifa Boru Secondary School",
-    consultant: "Oromia Engineering Corporation",
+    name: "Adventist Alumni Website (Aluminia)",
+    description:
+      "Responsive alumni website with SSR for SEO, alumni data management, and event registration using Next.js and Tailwind CSS.",
+    tags: [
+      { name: "Next.js", color: "blue" },
+      { name: "Tailwind CSS", color: "teal" },
+      { name: "SSR", color: "purple" },
+      { name: "REST API", color: "green" },
+    ],
     image: {
-        src: Gewasa,
-        alt: "Gewasa Secondary School",
+      src: alumniImage,
+      alt: "Aluminia Alumni Website Screenshot",
     },
-    cost: "34,404,005.75 Million",
-    position: "Resident Engineer",
+    remote_url: "https://abedevsaga.github.io/waa-aluminia/",
+    github_repo: "https://github.com/AbeDevSaga/waa-aluminia",
   },
   {
-    project: "Shashemene Meja Demma Ifa Boru Secondary School",
-    consultant: "Oromia Engineering Corporation",
+    name: "Harari Mass Media",
+    description:
+      "Laravel-based platform for accessing Harari news, events, and cultural archives. Styled with Tailwind CSS and powered by MySQL for reliable community engagement.",
+    tags: [
+      { name: "Laravel", color: "red" },
+      { name: "Tailwind CSS", color: "teal" },
+      { name: "MySQL", color: "orange" },
+    ],
     image: {
-        src: Shashamane,
-        alt: "Shashemene Meja Demma Secondary School",
+      src: harariMassMediaImage,
+      alt: "Harari Mass Media Platform Screenshot",
     },
-    cost: "37,673,417.94 Million",
-    position: "Resident Engineer",
+    remote_url: "https://massmediaagency.infinityfreeapp.com/",
+  },
+  {
+    name: "Hinta AI",
+    description:
+      "Laravel web platform digitalizing services for the Harari Innovation & Technology Agency. Features an AI-powered chatbot for automated responses and service delivery.",
+    tags: [
+      { name: "Laravel", color: "red" },
+      { name: "AI Integration", color: "purple" },
+      { name: "Chatbot", color: "blue" },
+    ],
+    image: {
+      src: hintaAiImage,
+      alt: "Hinta AI Platform Screenshot",
+    },
+    remote_url: "https://hinta.great-site.net/",
+  },
+  {
+    name: "Feedback and Corruption Suggestion System",
+    description:
+      "A web-based platform for the Ministry of Innovation and Technology, enabling users to submit feedback and report corruption-related suggestions.",
+    tags: [
+      { name: "MongoDB", color: "green" },
+      { name: "Express.js", color: "gray" },
+      { name: "React.js", color: "blue" },
+      { name: "Node.js", color: "teal" },
+    ],
+    image: {
+      src: feedbackSystemImage,
+      alt: "Feedback and Corruption Suggestion System Screenshot",
+    },
+    remote_url: "https://feedback-website.onrender.com/homepage",
+  },
+  {
+    name: "E-Commerce Platform",
+    description:
+      "A high-performance online store built with Next.js featuring server-side rendering and SEO optimization. Integrated Chapa for secure payment processing, with MongoDB and PostgreSQL for managing products, users, and orders.",
+    tags: [
+      { name: "Next.js", color: "blue" },
+      { name: "MongoDB", color: "green" },
+      { name: "PostgreSQL", color: "indigo" },
+      { name: "Chapa", color: "teal" },
+    ],
+    image: {
+      src: ecommercePlatformImage,
+      alt: "E-Commerce Platform Screenshot",
+    }, 
+    github_repo: "https://github.com/AbeDevSaga/React-Admin-Dashboard", 
+  },
+
+  {
+    name: "Portfolio Websites for Clients",
+    description:
+      "Developed personalized, SEO-optimized portfolio websites using Next.js and Tailwind CSS with SSR. Integrated dynamic client data via APIs and custom layouts.",
+    tags: [
+      { name: "Next.js", color: "blue" },
+      { name: "Tailwind CSS", color: "teal" },
+      { name: "SSR", color: "purple" },
+      { name: "REST API", color: "green" },
+    ],
+    image: {
+      src: portfolioImage,
+      alt: "Client Portfolio Websites Screenshot",
+    },
+    remote_url: "https://lalisa-personal-portfolio.vercel.app/",
+    github_repo: "https://github.com/AbeDevSaga/client-portfolio",
   },
 ];

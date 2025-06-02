@@ -2,10 +2,10 @@
 
 import React, { useEffect, useState } from "react";
 const experience = {
-  years: 8,
+  years: 5,
   title: "Years of Experience",
   description:
-    "Experienced Civil Engineer specializing in construction supervision, contract management, and quantity surveyor, ensuring quality and cost-efficient project execution.",
+    "Full-Stack Developer experienced in building scalable web apps, real-time systems, and cloud-based solutions using Next.js, Node.js, Docker, and modern JavaScript frameworks.",
 };
 
 const ExperianceCard = () => {
@@ -28,10 +28,10 @@ const ExperianceCard = () => {
   return (
     <div className="h-full flex flex-col items-left justify-center p-8 space-y-2 lg:space-y-8 rounded-lg shadow-lg bg-gradient-to-b from-secondary to-primary">
       <div className="flex items-left">
-      <h3 className="relative text-5xl lg:text-9xl font-bold text-white mb-2">
-        {currentExperience}
-        <span className="absolute text-3xl lg:text-6xl">+</span>
-      </h3>
+        <h3 className="relative text-5xl lg:text-9xl font-bold text-white mb-2">
+          {currentExperience}
+          <span className="absolute text-3xl lg:text-6xl">+</span>
+        </h3>
       </div>
       <p className="text-white text-2xl lg:text-5xl">{experience.title}</p>
       <p className="text-gray-300">{experience.description}</p>

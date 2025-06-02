@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { useState } from "react";
 import { FaPaperPlane } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
@@ -15,7 +15,7 @@ const ContactForm = () => {
     phone: "",
     email: "",
     message: "",
-  })
+  });
   const [loading, setLoading] = useState(false);
 
   const handleChange = (
@@ -36,7 +36,7 @@ const ContactForm = () => {
         {
           from_name: form.name,
           from_email: form.email,
-          to_name: "Lalisa Chali Wakweyya",
+          to_name: "Amanuel Daniel Wakweyya",
           to_email: "lalisachali2013@gmail.com", // The recipient email
           phone: form.phone,
           message: form.message,
@@ -65,12 +65,12 @@ const ContactForm = () => {
         <div className="flex flex-col justify-center items-left h-full space-y-3 lg:px-5">
           <h2 className="font-bold text-primary">GET IN TOUCH</h2>
           <p className="text-gray-300 font-bold text-xl lg:text-3xl">
-            Elevate your construction projects with Lalisa Chali Wakweyya
+            Build scalable, high-performance apps with Amanuel Daniel
           </p>
           <p className="w-full text-gray-400">
-            A seasoned Civil Engineer with expertise in contract administration,
-            construction supervision, and quantity surveyor. Let&apos;s collaborate
-            to bring your vision to life.
+            A passionate Full-Stack Developer specializing in Next.js, Node.js,
+            and Docker. Let&apos;s collaborate to bring your digital ideas to
+            life.
           </p>
         </div>
 

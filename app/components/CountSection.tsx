@@ -1,10 +1,10 @@
 import GlowCard from "./GlowCard";
 const counts = [
-  { id: 1, count: "10+", description: "Projects Completed" },
-  { id: 2, count: "15+", description: "Client Reviews" },
-  { id: 3, count: "5+", description: "Major Clients" },
-  { id: 4, count: "8+", description: "Years of Experience" },
-  { id: 5, count: "20+", description: "Site Inspections & Supervisions" },
+  { id: 1, count: "20+", description: "Projects Completed" },
+  { id: 2, count: "14+", description: "Client Reviews" },
+  { id: 3, count: "7+", description: "Major Clients" },
+  { id: 4, count: "5", description: "Years of Experience" },
+  { id: 5, count: "11+", description: "Real-time Systems Built" },
 ];
 
 const CountSection = () => {

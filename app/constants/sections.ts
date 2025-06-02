@@ -2,28 +2,39 @@ import { TSections } from "./type";
 
 export const section: TSections = {
   about: {
-    p: "About Me",
-    h2: "Background & Expertise",
-    content: "I am Lalisa Chali Wakweyya, a Civil Engineer with 8+ years of experience in construction supervision, contract administration, and quantity surveyor across major projects in Ethiopia."
-   },
+    p: "About",
+    h2: "Who I Am",
+    content:
+      "I'm Amanuel Daniel, a Full-Stack Developer with a passion for building high-performance web apps and real-time systems using Next.js, Node.js, and Docker.",
+  },
   skills: {
-    p: "What I Bring to the Table",
-    h2: "Skills & Competencies",
-    content: "Throughout my career, I have developed a robust skill set that enables me to excel in the construction industry. Below are the key strengths I bring to the table:",
+    p: "Skills",
+    h2: "Tech Stack",
+    content:
+      "Proficient in modern JavaScript frameworks, scalable backend systems, real-time apps, and cloud-native deployments.",
+  },
+  experience: {
+    p: "Experiences",
+    h2: "Work Experiences",
+    content:
+      "Worked with Adventist Alumni, Harari Mass Media, and Harari Innovation Agency delivering responsive, scalable web platforms, integrating APIs, and optimizing digital services. Experienced in AI-integrated platforms, SSR, and event management modules.",
   },
   projects: {
-    p: "My Work in Action",
-    h2: "Notable Projects",
-    content: "With extensive experience in the field, I have had the opportunity to contribute to several impactful projects. Here are a few notable highlights:",
+    p: "Projects",
+    h2: "What I’ve Built",
+    content:
+      "From RBAC dashboards to collaborative coding platforms, I craft scalable, real-time solutions for diverse industries.",
   },
   certifications: {
-    p: "Recognitions & Credentials",
-    h2: "Certifications & Training",
-    content: "I have acquired multiple certifications that validate my expertise and commitment to professional growth. Below are some of the key certifications I have earned:",
+    p: "Certs",
+    h2: "Recognitions",
+    content:
+      "Certified in modern web frameworks and tools, always refining my stack and keeping ahead of tech trends.",
   },
   additional_works: {
-    p: "Additional Projects",
-    h2: "Additional Projects",
-    content: "Beyond these notable highlights, I have also worked on several other impactful projects, each contributing to my expertise and experience in the field."
-  }
+    p: "More",
+    h2: "Other Works",
+    content:
+      "Additional projects for media platforms, innovation bureaus, and community web services — expanding my impact.",
+  },
 };

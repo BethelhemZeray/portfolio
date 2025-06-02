@@ -2,31 +2,18 @@ import { TCertification } from "./type";
 
 export const certificates: TCertification[] = [
   {
-    certificate: "Certified Practicing Professional Structural Engineer (00042)"
+    certificate: "Certified Full-Stack Web Developer with Next.js",
   },
   {
-    certificate: "Certified on Construction Project Management Overview Training (EACE-TCS 0000214)"
+    certificate: "JavaScript and TypeScript Fundamentals Certificate",
   },
   {
-    certificate: "Certified on Bridging the Gap: Enhancing Construction Health and Safety Standards in Ethiopia Training"
+    certificate: "Backend Development with Node.js and Express Certification",
   },
   {
-    certificate: "Certified on Leading Practices in Project Management and Engineering for Future Project Managers Training"
+    certificate: "Docker Essentials for Developers Certificate",
   },
   {
-    certificate: "Certified on MS Project Engineering Software Training"
+    certificate: "API Design and Authentication Best Practices Certificate",
   },
-  {
-    certificate: "Certified on Leadership Training"
-  },
-  {
-    certificate: "Certified on Basic Evangelism Training"
-  },
-  {
-    certificate: "Certified on Basic Discipleship Training"
-  },
-  {
-    certificate: "Certified on Advanced Discipleship Training"
-  },
-  
 ];
