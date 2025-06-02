@@ -9,7 +9,7 @@ export const graduation: TGraduation[] = [
     name: "Haramaya University",
     dept: "BSc. in Software Engineering",
     gpa: "3.87",
-    resume: "/resume.pdf",
+    resume: "Amanuel_Daniel_Full_Stack.pdf",
   },
   {
     universityLogo: AddisAbaba,
