@@ -21,9 +21,9 @@ export const config = {
       },
       {
         name: "phone",
-        url: "tel:+251919755719",
+        url: "tel:+251944119755",
         icon: "phone",
-        value: "+251919755719",
+        value: "+251944119755",
       },
     ],
     socialLinks: [
@@ -48,7 +48,7 @@ export const config = {
         icon: "upwork",
       },
     ],
-    copyright: "© 2025 AbeDevSaga. All rights reserved.",
+    copyright: "© 2023 BethelhemZeray. All rights reserved.",
     callToAction: "Let's Connect!",
     headline: "Get Ready To Create Great",
   },
