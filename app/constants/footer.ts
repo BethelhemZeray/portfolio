@@ -29,7 +29,7 @@ export const config = {
     socialLinks: [
       {
         name: "Telegram",
-        url: "https://t.me/AbeDani",
+        url: "https://t.me/BethyZeray",
         icon: "telegram",
       },
       {
@@ -39,7 +39,7 @@ export const config = {
       },
       {
         name: "GitHub",
-        url: "https://github.com/AbeDevSaga",
+        url: "https://github.com/BethelhemZeray",
         icon: "github",
       },
       {
