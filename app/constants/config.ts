@@ -4,7 +4,7 @@ export const config: TConfig = {
   html: {
     title: "Bethelhem Zeray Hailu 3D Portfolio",
     fullName: "Bethelhem Zeray Hailu",
-    email: "2000amandanm@gmail.com",
+    email: "bethelhemzeray@gmail.com",
   },
   contact: {
     p: "Get in touch",

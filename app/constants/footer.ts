@@ -9,9 +9,9 @@ export const config = {
     contact: [
       {
         name: "email",
-        url: "mailto:2000amandanm@gmail.com",
+        url: "mailto:bethelhemzeray@gmail.com",
         icon: "email",
-        value: "2000amandanm@gmail.com",
+        value: "bethelhemzeray@gmail.com",
       },
       {
         name: "location",
