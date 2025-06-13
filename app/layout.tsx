@@ -9,8 +9,8 @@ import ReturnButton from "./components/ReturnButton";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Amanuel's Portfolio",
-  description: "Welcome to Eng Amanuels portfolio",
+  title: "Bethelhem's Portfolio",
+  description: "Welcome to Eng Bethelhems portfolio",
   icons: {
     icon: "favicon_io/favicon.ico",
     shortcut: "favicon_io/favicon-32x32.png",

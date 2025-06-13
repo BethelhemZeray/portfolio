@@ -10,7 +10,7 @@ const GraduationSection = () => {
   const handleDownload = async () => {
     try {
       // First try the blob method
-      const response = await fetch("/Amanuel_Daniel_Full_Stack_Resume.pdf", {
+      const response = await fetch("/Bethelhem_Daniel_Full_Stack_Resume.pdf", {
         cache: "no-store",
         headers: {
           "Content-Type": "application/pdf",
@@ -28,7 +28,7 @@ const GraduationSection = () => {
 
       const link = document.createElement("a");
       link.href = blobUrl;
-      link.download = "Amanuel_Daniel_Full_Stack_Resume.pdf";
+      link.download = "Bethelhem_Daniel_Full_Stack_Resume.pdf";
       document.body.appendChild(link);
       link.click();
 
@@ -40,7 +40,7 @@ const GraduationSection = () => {
     } catch (error) {
       console.error("Download failed:", error);
       // Fallback to direct download
-      window.location.assign("/Amanuel_Daniel_Full_Stack_Resume.pdf");
+      window.location.assign("/Bethelhem_Daniel_Full_Stack_Resume.pdf");
     }
   };
 
