@@ -34,7 +34,7 @@ export const config = {
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/amanuel-daniel-4573b1309/",
+        url: "http://www.linkedin.com/in/bethelhem-zeray-5a6639257",
         icon: "linkedin",
       },
       {
